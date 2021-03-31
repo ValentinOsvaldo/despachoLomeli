@@ -2,7 +2,7 @@
 <?php include "templates/header.php" ?>
 
 <section class="container">
-    <h2 class="title">Clientes</h2>
+    <h2 class="title">Gastos</h2>
     <table class="table">
         <thead>
             <tr>
@@ -21,8 +21,8 @@
                     <tr>
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['nombre']; ?></td>
-                        <td><?php echo $row['propietario']; ?></td>
-                        <td><?php echo $row['sucursal']; ?></td>
+                        <td><?php echo $row['gastosAnuales']; ?></td>
+                        <td><?php echo $row['gastosAnualesIVA']; ?></td>
                         <td class="center">
                             <a href="editar.php?id=<?php echo $row['id']; ?>" class="btn">
                                 <span>

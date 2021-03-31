@@ -4,12 +4,12 @@ include "db.php";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "DELETE FROM clientes WHERE id = '$id'";
+    $query = "DELETE FROM registro WHERE id = '$id'";
     $res = mysqli_query($connect, $query);
 
     if (!$res) {
         die("Query failed");
     }
 
-    header("Location: clientes.php");
+    header("Location: registro.php");
 }
